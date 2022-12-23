@@ -10,9 +10,6 @@
   justify-content: space-between;
 }
 
-.logo__part--white {
-  color: #ffffff;
-}
 
 .adress {
   font-style: normal;
@@ -22,7 +19,6 @@
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #FFFFFF;
-
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -99,12 +95,14 @@
   padding-bottom: 15px;
   padding-left: 15px;
   color: #FFFFFF;
+
+  &::placeholder {
+      color: rgba(255, 255, 255, 0.6);
+      font-size: 16px;
+    }
 }
 
-.subscribe-form__input::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 16px;
-}
+
 
 .subscribe-form__btn {
   display: flex;
